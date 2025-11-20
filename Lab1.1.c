@@ -5,12 +5,12 @@ int main() {
     int N, i ;
 
     // รับค่า N (จำนวนรอบ)
-    if (scanf( "%d" , &N) != 1) {
+    if (scanf( "%d" , &N ) != 1 || N <= 0 ) {
             printf( "Error" ) ;  // Handle input failure
         return 1 ;
     }else {
         for( i = 0 ; i<N ; i++ ){
-        printf( "Hello Loop!\n") ;     // TODO: Implement the for loop to print the message N times
+        printf( "Hello Loop!\n" ) ;     // TODO: Implement the for loop to print the message N times
         }
     }
     return 0 ;
