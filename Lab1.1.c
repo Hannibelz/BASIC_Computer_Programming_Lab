@@ -9,7 +9,7 @@ int main() {
             printf( "Error" ) ;  // Handle input failure
         return 1 ;
     }else {
-        for( i = 0 ; i<N ; i++ ){
+        for( i = 0 ; i < N ; i++ ){
         printf( "Hello Loop!\n" ) ;     // TODO: Implement the for loop to print the message N times
         }
     }
