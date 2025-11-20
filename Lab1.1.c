@@ -2,15 +2,15 @@
 #include <stdio.h>
 
 int main() {
-    int N, i;
+    int N, i ;
 
     // รับค่า N (จำนวนรอบ)
-    if (scanf("%d", &N) != 1) {
-            printf("Error Please Try again");
+    if (scanf( "%d" , &N) != 1) {
+            printf( "Error" ) ;
         return 1;// Handle input failure
-    }else{
-      for(i=0; i<N ;i++){
-        printf("Hello Loop!\n");
+    }else {
+        for( i = 0 ; i<N ; i++ ){
+        printf( "Hello Loop!\n") ;
         }
     }
     // TODO: Implement the for loop to print the message N times
