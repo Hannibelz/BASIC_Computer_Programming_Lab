@@ -31,7 +31,7 @@ int main() {
         break ;
 
     default:
-        printf( "Invalid Operation \n" ) ;
+        printf( "Invalid Operation" ) ;
     }
     return 0 ;
 }
