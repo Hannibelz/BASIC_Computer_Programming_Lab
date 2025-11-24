@@ -2,7 +2,7 @@
 
 int main() {
 
-    int num1, num2, operationCode, result;
+    int num1, num2, operationCode, result ;
 
     printf( "Please Insert Your Number ( num1, num2, OperationCode ) : \n" ) ;
     if (scanf( "%d %d %d", &num1, &num2, &operationCode ) != 3 ) {
@@ -33,4 +33,5 @@ int main() {
     default:
         printf( "Invalid Operation" ) ;
     }
+    return 0 ;
 }
