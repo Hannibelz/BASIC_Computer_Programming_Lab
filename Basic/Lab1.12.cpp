@@ -5,7 +5,7 @@ int main () {
     float dataUsage_GB ;
     float totalBill = 0.0 ;
 
-    printf( "Enter Your Number (PlanCode, Data): " ) ;
+    printf( "Enter Your Number (PlanCode, Data) : " ) ;
 
     if (scanf( "%d %f", &planCode, &dataUsage_GB ) != 2 ) {
         return 1 ;
