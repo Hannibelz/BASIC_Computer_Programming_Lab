@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+int main(){
+    int termCode ;
+    float investmentAmount ;
+    float aprRate, totalInterest = 0.0 ;
+
+    printf("Enter termCode, investmentAmount : ");
+    if (scanf("%d %f", &termCode, &investmentAmount) != 2 ){
+        return 1;
+    }
+
+    if(termCode == 1){
+        if (investmentAmount < 5000) {
+            aprRate = 0.03 ;
+        }else if (investmentAmount >= 5000) {
+            aprRate = 0.04 ;
+        }
+    }else if (termCode == 2){
+        if (investmentAmount < 10000) {
+            aprRate = 0.05 ;
+        }else if (investmentAmount >= 10000) {
+            aprRate = 0.065 ;
+        }
+    }else if (termCode == 3){
+        aprRate = 0.08 ;
+    }
+
+    if(termCode >= 1 && termCode <=3) {
+        totalInterest = investmentAmount * aprRate ;
+        printf("%.2f\n", totalInterest);
+    }else {
+        printf("Invalid Term Code \n") ;
+    }
+    return 0;
+}
